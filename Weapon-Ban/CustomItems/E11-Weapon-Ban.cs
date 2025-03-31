@@ -1,9 +1,9 @@
-﻿using Exiled.API.Features;
+﻿using System.ComponentModel;
+using Exiled.API.Features;
 using Exiled.API.Features.Attributes;
 using Exiled.API.Features.Spawn;
 using Exiled.CustomItems.API.Features;
 using Exiled.Events.EventArgs.Player;
-using LabApi.Events.Arguments.PlayerEvents;
 
 namespace Weapon_Ban.CustomItems;
 

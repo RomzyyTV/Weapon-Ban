@@ -7,7 +7,7 @@ public class Config : IConfig
 {
     public bool IsEnabled { get; set; } = true;
     public bool Debug { get; set; }
-    public uint ID { get; set; } = 666;
+    public uint ID { get; set; } = 22;
     public string Name { get; set; } = "WeaponBan";
     public string Description { get; set; } = "Weapon ban";
     public float Weight { get; set; } = 0;

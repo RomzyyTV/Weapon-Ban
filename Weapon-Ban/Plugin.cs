@@ -13,13 +13,8 @@ public class Plugin : Plugin<Config>
     
     public override void OnEnabled()
     {
+        Singleton = this;
         CustomItem.RegisterItems();
         base.OnEnabled();
-    }
-
-    public override void OnDisabled()
-    {
-        CustomItem.UnregisterItems();
-        base.OnDisabled();
     }
 }
