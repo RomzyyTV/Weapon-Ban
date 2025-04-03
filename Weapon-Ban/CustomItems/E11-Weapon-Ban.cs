@@ -10,8 +10,8 @@ using Weapon_Ban;
 
 namespace Site16Essentials.Items.Firearm
 {
-    [Exiled.API.Features.Attributes.CustomItem(ItemType.GunRevolver)]
-    public class FuckYouGun : CustomWeapon
+    [Exiled.API.Features.Attributes.CustomItem(ItemType.GunE11SR)]
+    public class E11_Weapon_Ban : CustomWeapon
     {
         public override uint Id { get; set; } = Plugin.Singleton.Config.ID;
         public override string Name { get; set; } = Plugin.Singleton.Config.Name;
@@ -53,7 +53,6 @@ namespace Site16Essentials.Items.Firearm
         {
             if (!Plugin.Singleton.Config.UserIdWhitelist.Contains(player.UserId))
             {
-                player.Broadcast(10, "This weapon is dev only, try asking a dev like a good boy.");
                 Item deniedItem = player.Items.FirstOrDefault(item => item.Type == ItemType.GunRevolver);
                 player.RemoveItem(deniedItem);
                 return;
